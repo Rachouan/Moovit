@@ -1,3 +1,506 @@
-body {
-	background-color:black;
+*{
+	margin:0px;
+	padding: 0px;
+}
+@font-face {font-family: Bariol;
+	src: url(../fonts/Bariol_Regular.otf);
+}
+.blur{
+	opacity: .1 !important;
+}
+.hide{
+	display: none;
+}
+.drop{
+	background-image: url(../images/icons/calDrop.png) !important;
+}
+.green{
+	background-color: #5bc4b4;
+}
+.blue{
+	background-color: #5b9ec4;
+}
+.yellow{
+	background-color: #e4e255;
+}
+.red{
+	background-color: #e84e55;
+}
+
+body{
+	font-family: Bariol;
+	background-color: #f5f6fa;
+	overflow-x:hidden; 
+}
+
+
+
+/*header*/
+header div#header{
+	position: fixed;
+	width: 100%;
+	left: 0px;
+	height: 75px;
+	top: 0px;
+	z-index: 9998;
+	background-color: white;
+}
+header div#header h1{
+
+	position: absolute;
+	display: block;
+	left: 57%;
+	width: 130px;
+	height: 75px;
+	text-align: right;
+	line-height: 75px;
+	margin-left: -65px;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-image: url(../images/icons/logo.png);
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	background-position: left;
+}
+header div#header a.menu{
+	display: none;
+	float: left;
+	width: 75px;
+	height: 75px;
+	margin-left: 250px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../images/icons/menu.png);
+}
+header div#header ul{
+	float: right;
+}
+header div#header ul li{
+	display: block;
+	float: right;
+}
+header div#header ul li.calendar{
+	width: 75px;
+	height: 75px;
+
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../images/icons/mycal.png);
+	cursor: pointer;
+
+
+
+
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+header div#header ul li.opencalendar{
+	position: fixed;
+	display: none;
+	left: 100%;
+	margin-left: -250px;
+	top: 75px;
+	width: 250px;
+	height: 350px;
+	border-radius: 0 0 0 .5em;
+	background-color: #333645;
+	overflow-y: scroll;
+}
+header div#header ul li.opencalendar ul li{
+	display: block;
+	float: left;
+	width: 250px;
+	line-height: 75px;
+	font-size: .8em;
+
+}
+header div#header ul li.opencalendar ul li form input[type="text"]{
+	display: block;
+	float: left;
+	width: 200px;
+	padding:25px;
+	text-align: left;
+	font-size: 1em;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	color: white;
+	background:none;
+	border: none;
+
+}
+header div#header ul li.opencalendar ul li form input[type="text"]:focus{
+	outline-width: 0px;
+
+}
+header div#header ul li.opencalendar ul li.date{
+	text-align: center;
+	color: white;
+	height: 50px;
+	line-height: 50px;
+	background-color: #262836;
+	
+}
+/*end header*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*NAVIGATION*/
+header nav{
+	position: fixed;
+	background-color: #333645;
+	width: 250px;
+	height: 100%;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+
+    -webkit-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
+    -ms-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+
+
+}
+header nav header{
+	float: left;
+	position: relative;
+
+}
+header nav header a.menu{
+	display: none;
+	position: absolute;
+	left: 250px;
+	width: 75px;
+	height: 75px;
+	margin-left: 250px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../images/icons/menu.png);
+
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.close{
+	background-image: url(../images/icons/close.png) !important;
+}
+header nav ul{
+position: absolute;
+left: 0;
+top: 0;
+overflow-y:scroll;
+float: left;
+width: 100%;
+height: 100%;
+}
+header nav ul li{
+	display: block;
+	float: left;
+	width: 250px;
+	height: 75px;
+	cursor: pointer;
+
+	webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+}
+header nav ul li.green:hover{
+	background-color: #6acfc0;
+}
+header nav ul li:hover{
+	background-color: #2e313f;
+}
+header nav ul li.selected{
+	background-color: #262836;
+}
+header nav ul li.selected span.indicator{
+	float: left;
+	width: 5%;
+	height: 100%;
+}
+header nav ul li span.indicator{
+	float: left;
+	width: 1%;
+	height: 100%;
+}
+header nav ul li a{
+
+	float: left;
+	display: block;
+	height: 80%;
+	line-height: 75px;
+	width: 50%;
+	padding: 0 15%;
+	margin-left: 30px;
+	text-decoration: none;
+	color: white;
+	letter-spacing: 1px;
+}
+header nav ul li a.profile{
+
+	float: left;
+	display: block;
+	height: 80%;
+	line-height: normal;
+	width: 80%;
+	padding: 10%;
+	margin-left: 0;
+	text-decoration: none;
+	color: white;
+}
+header nav ul li a.profile div.profilepic{
+
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-left: -5px;
+	margin-top: -5px;
+	border-radius: 50%;
+	background-image: url(../images/profile-pictures/main.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+header nav ul li a.profile p{
+
+	float: left;
+	font-size: .8em;
+	width: 50%;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+header nav ul li a.profile p.rank{
+
+	float: left;
+	font-size: .8em;
+	width: 50%;
+	margin-left: 10px;
+	font-weight: normal;
+}
+/*END NAVIGATION*/
+
+
+
+
+
+
+
+
+
+/*Content*/
+#content{
+	position: absolute;
+	width: 800px;
+	left: 57%;
+	margin-left: -400px;
+	padding-top: 30px;
+}
+#content section{
+	float: left;
+	width: 100%;
+	padding-top: 20px;
+}
+#content section.filters{
+
+	padding-top: 75px;
+}
+#content section.filters ul.project_selection{
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	border-radius: 1.5em;
+	overflow: hidden;
+	background-color: #e9ebf3
+}
+#content section.filters ul.project_selection li{
+	display: block;
+	color: #445878;
+	float: left;
+	padding: 5px 0px;
+	font-size: .8em;
+	cursor: pointer;
+	width: 100px;
+	text-align: center;
+
+
+
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+#content section.filters ul.project_selection li.selected{
+	color: white;
+	background-color: #5bc4b4;
+}
+#content section.filters ul.project_selection li.selected:hover{
+	color: white;
+	background-color: #5bc4b4;
+}
+#content section.filters ul.project_selection li:hover{
+	background-color: #d4d7e4;
+}
+#content section.filters form{
+	display: block;
+	width: 90%;
+	margin: 0 5%;
+	float: left;
+	margin-top: 20px;
+	background-color: #e9ebf3;
+	border-radius: .2em;
+	overflow: hidden;
+}
+#content section.filters form input[type="text"]{
+	float: left;
+	width: 50%;
+	padding: 0 2.5%;
+	height: 50px;
+	border: none;
+}
+#content section.filters form input:focus{
+	outline-width: 0px;
+}
+#content section.filters form select{
+	float: left;
+	background: none;
+	border: none;
+	width: 10%;
+	height: 50px;
+	text-align: center;
+}
+#content section.filters form input[type="date"]{
+
+	float: left;
+	width: 30%;
+	height: 50px;
+	padding: 0 2.5%;
+	border: none;
+	text-align: center;
+	background: none;
+}
+#content section.activities ul li{
+	display: block;
+	float: left;
+	width: 40%;
+	margin: 5%;
+	height: 200px;
+	background-color: rgba(0,0,0,.4);
+	border-radius: .5em;
+	cursor: pointer;
+}
+/*end Content*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*MOBILE*/
+@media only screen and (max-width: 1080px) {
+	header nav{
+		left: -250px;
+	}
+	header nav.open{
+		left: 0;
+	}
+	#content{
+		left: 50%
+	}
+	
+	header div#header h1{
+		left: 50%;
+	}
+	header nav header a.menu{
+		width: 50px;
+		height: 50px;
+		margin:10px;
+		display: block;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+	header nav{
+		left: -250px;
+	}
+	header nav.open{
+		left: 0;
+	}
+	#content{
+		float: left;
+		position: static;
+		width: 100%;
+		left: 0;
+		margin-left: 0px;
+	}
+	
+	header div#header h1{
+		left: 50%;
+	}
+	header nav header a.menu{
+		width: 50px;
+		height: 50px;
+		margin:10px;
+		display: block;
+	}
+
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+	#content section.filters form input[type="text"]{
+		width: 100%;
+	}
+	#content section.filters form select{
+		width: 50%;
+	}
+	#content section.filters form input[type="date"]{
+		width: 40%;
+	}
+	#content section.activities ul li{
+	display: block;
+	float: left;
+	width: 90%;
+	margin: 5%;
+	height: 200px;
+	background-color: rgba(0,0,0,.4);
+	border-radius: .5em;
+}
+
 }
