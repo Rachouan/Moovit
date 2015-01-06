@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>MOOV-IT</title>
+        <title>Moov-it edit all your information</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -56,10 +56,10 @@
                             <p class="rank">Couch potato</p>
                         </a>
                     </li>
-                    <li class="selected"><span class="indicator green"></span><a href="#">Dashboard</a></li>
+                    <li><span class="indicator green"></span><a href="#">Dashboard</a></li>
                     <li><span class="indicator red"></span><a href="#">FAQ</a></li>
                     <li><span class="indicator yellow"></span><a href="#">Help</a></li>
-                    <li><span class="indicator blue"></span><a href="#">Settings</a></li>
+                    <li class="selected"><span class="indicator blue"></span><a href="#">Settings</a></li>
                     <li>
                         <a href="#">
                         STATS
@@ -70,36 +70,18 @@
         </header>
 
         <article id="content">
-            <section class="filters">
-                <header>
-                    <h1 class="hide">Filters</h1>
-                </header>
-                <ul class="project_selection">
-                    <li class="selected">Activity</li>
-                    <li>Groups</li>
+            <header class="hide"><h1>all content</h1></header>
+           <section class="settings">
+            <header class="hide"><h1>settings</h1></header>
+                <ul>
+                    <li class="green">
+                        <p>Your profile is public</p>
+                            <p class="slidercontainer">
+                                <span class="slider"></span>
+                            </p>
+                    </li>
                 </ul>
-                <form>
-                    <input type="text" id="dashboard_search" placeholder="look for activities ...">
-                    <select>
-                      <option value="volvo">Volvo</option>
-                      <option value="saab">Saab</option>
-                      <option value="mercedes">Mercedes</option>
-                      <option value="audi">Audi</option>
-                    </select>
-                    <input type="date" name="activitydate" max="3015-12-31" value="2014-12-22">
-                </form>
-            </section>
-
-            <section class="activities">
-                <header class="hide"><h1>All Activities</h1></header>
-                <ul class="all">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </section>
+           </section>
         </article>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

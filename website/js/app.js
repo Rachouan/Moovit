@@ -21,6 +21,29 @@ $(function(){
 		}).on("mouseup",function () {
 			$("#header .calendar").removeClass("drop");
 		});
+
+		$('.slidercontainer').click(function(e){
+
+			var slider = $(this).find('.slider');
+
+	        if(slider.attr("class")== "slider on"){
+	            slider.removeClass('on');
+	            slider.addClass('off');
+	            slider.parent().parent().removeClass("green");
+	            slider.parent().parent().addClass("red");
+	        }else if(slider.attr("class")== "slider"){
+	            slider.removeClass('on');
+	            slider.addClass('off');
+	            slider.parent().parent().removeClass("green");
+	            slider.parent().parent().addClass("red");
+	        }else{
+	            slider.removeClass('off');
+	            slider.addClass('on');
+	            slider.parent().parent().removeClass("red");
+	            slider.parent().parent().addClass("green");
+	        }
+
+    });
 		
 	}
 

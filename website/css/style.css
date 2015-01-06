@@ -16,15 +16,26 @@
 }
 .green{
 	background-color: #5bc4b4;
+	color: white;
 }
 .blue{
 	background-color: #5b9ec4;
+	color: white;
 }
 .yellow{
 	background-color: #e4e255;
+	color: white;
 }
 .red{
 	background-color: #e84e55;
+	color: white;
+}
+.slider.on{
+    margin-left: 0px !important;
+}
+.slider.off{
+
+    margin-left: 15px !important;
 }
 
 body{
@@ -115,18 +126,39 @@ header div#header ul li.opencalendar{
 header div#header ul li.opencalendar ul li{
 	display: block;
 	float: left;
-	width: 250px;
-	line-height: 75px;
+	width: 200px;
+	padding: 25px;
 	font-size: .8em;
+	color: white;
+	cursor: pointer;
+
+}
+header div#header ul li.opencalendar ul li span{
+	display: block;
+	float: right;
+	height: 20px;
+	width: 20px;
+	background-image: url(../images/icons/remove.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+}
+header div#header ul li.opencalendar ul li:hover{
+	background-color: #3d4151;
+
+}
+header div#header ul li.opencalendar ul li.search{
+	padding: 0px;
 
 }
 header div#header ul li.opencalendar ul li form input[type="text"]{
 	display: block;
 	float: left;
-	width: 200px;
-	padding:25px;
+	width: 220px;
+	padding:15px;
 	text-align: left;
-	font-size: 1em;
+	font-size: .8em;
 	font-weight: lighter;
 	letter-spacing: 1px;
 	color: white;
@@ -141,8 +173,7 @@ header div#header ul li.opencalendar ul li form input[type="text"]:focus{
 header div#header ul li.opencalendar ul li.date{
 	text-align: center;
 	color: white;
-	height: 50px;
-	line-height: 50px;
+	padding: 10px 25px;
 	background-color: #262836;
 	
 }
@@ -413,6 +444,73 @@ header nav ul li a.profile p.rank{
 	background-color: rgba(0,0,0,.4);
 	border-radius: .5em;
 	cursor: pointer;
+}
+
+
+
+
+
+
+#content section.settings{
+
+	margin-top: 50px;
+
+}
+
+#content section.settings ul{
+
+	display: block;
+	width: 90%;
+	margin: 0 5%;
+	float: left;
+	border-radius: .3em;
+	overflow: hidden;
+
+}
+#content section.settings ul li{
+
+	display: block;
+	float: left;
+	width: 95%;
+	padding: 2.5%;
+	cursor: pointer;
+
+}
+#content section.settings ul li p{
+
+	float: left;
+	font-size: .8em;
+	letter-spacing: 1px;
+
+}
+#content section.settings ul li .slidercontainer{
+
+    position: relative;
+    float: right;
+    display: block;
+    width: 30px;
+    height: 15px;
+    padding: 5px;
+    font-size: 1.2em;
+    color: white;
+    font-family: Bariol;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+
+}
+#content section.settings ul li .slidercontainer .slider{
+
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+
 }
 /*end Content*/
 
