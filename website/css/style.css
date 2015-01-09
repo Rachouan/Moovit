@@ -11,9 +11,6 @@
 .hide{
 	display: none;
 }
-.drop{
-	background-image: url(../images/icons/calDrop.png) !important;
-}
 .green{
 	background-color: #5bc4b4;
 	color: white;
@@ -470,9 +467,21 @@ header nav ul li a.profile p.rank{
 #content section.activities ul li div{
 	position: absolute;
 	width: 100%;
-	top: 90px;
+	top: 88px;
 }
-#content section.activities ul li div h1{
+#content section.activities ul li div div{
+	float: left;
+}
+#content section.activities ul li div div.detail_small{
+	width: 90%;
+	padding: 5%;
+}
+
+#content section.activities ul li div div.detail_big{
+	width: 90%;
+	padding: 5%;
+}
+#content section.activities ul li div div.detail_small h1{
 	color: white;
 	letter-spacing: 1px;
 	font-weight: normal;
@@ -486,7 +495,7 @@ header nav ul li a.profile p.rank{
 	height: auto;
 	background-color: #262836;
 }
-#content section.activities ul li div span.date{
+#content section.activities ul li div div.detail_small span.date{
 	color: #5bc4b4;
 	letter-spacing: 1px;
 	font-weight: normal;
@@ -495,8 +504,9 @@ header nav ul li a.profile p.rank{
 	background-image: url(../images/icons/clock.svg);
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: left;
 }
-#content section.activities ul li div a{
+#content section.activities ul li div div.detail_small a{
 	text-decoration: none;
 	color: white;
 	font-weight: 300;
@@ -528,15 +538,15 @@ header nav ul li a.profile p.rank{
 
 
 }
-#content section.activities ul li div a:hover{
+#content section.activities ul li div div.detail_small a:hover{
 	background-color: #77e0d0;
 }
-#content section.activities ul li div div.detail{
+#content section.activities ul li div div.detail_big div{
 	float: left;
-	width: 90%;
-	background-color: #ff00ff;
-	padding: 5%;
-	margin-top: 75px;
+	width: 60%;
+	height: 200px;
+	background-color: white;
+
 }
 
 
