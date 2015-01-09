@@ -35,16 +35,21 @@ $(function(){
 	        if(slider.attr("class")== "slider on"){
 	            slider.removeClass('on');
 	            slider.addClass('off');
+	            $("status").html("public");
+
 	            slider.parent().parent().removeClass("green");
 	            slider.parent().parent().addClass("red");
 	        }else if(slider.attr("class")== "slider"){
 	            slider.removeClass('on');
 	            slider.addClass('off');
+
+	            $("status").html("private");
 	            slider.parent().parent().removeClass("green");
 	            slider.parent().parent().addClass("red");
 	        }else{
 	            slider.removeClass('off');
 	            slider.addClass('on');
+	            $("status").html("private");
 	            slider.parent().parent().removeClass("red");
 	            slider.parent().parent().addClass("green");
 	        }
