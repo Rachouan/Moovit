@@ -457,9 +457,9 @@ header nav ul li a.profile p.rank{
 	z-index: 9997;
 	height: 500px;
 
-	-ms-transform: scale(1.2,1.2); /* IE 9 */
-    -webkit-transform: scale(1.2,1.2); /* Chrome, Safari, Opera */
-    transform: scale(1.2,1.2);
+	-ms-transform: scale(1.02,1.02); /* IE 9 */
+    -webkit-transform: scale(1.02,1.02); /* Chrome, Safari, Opera */
+    transform: scale(1.02,1.02);
 
     box-shadow: 0px 0px 15px rgba(0,0,0,.2);
 
@@ -641,6 +641,17 @@ header nav ul li a.profile p.rank{
 	#content{
 		left: 50%
 	}
+	#content section.activities ul li.open{
+		z-index: 9997;
+		height: 500px;
+
+		-ms-transform: scale(1,1); /* IE 9 */
+	    -webkit-transform: scale(1,1); /* Chrome, Safari, Opera */
+	    transform: scale(1,1);
+
+	    box-shadow: 0px 0px 15px rgba(0,0,0,.2);
+
+	}
 	
 	header div#header h1{
 		left: 50%;
@@ -687,6 +698,7 @@ header nav ul li a.profile p.rank{
 
 
 @media only screen and (max-width: 600px) {
+
 	#content section.filters form input[type="text"]{
 		width: 100%;
 	}
