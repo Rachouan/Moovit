@@ -12,19 +12,19 @@
 	display: none;
 }
 .green{
-	background-color: #5bc4b4;
+	background-color: #5bc4b4 !important;
 	color: white;
 }
 .blue{
-	background-color: #5b9ec4;
+	background-color: #5b9ec4 !important;
 	color: white;
 }
 .yellow{
-	background-color: #e4e255;
+	background-color: #e4e255 !important;
 	color: white;
 }
 .red{
-	background-color: #e84e55;
+	background-color: #e84e55 !important;
 	color: white;
 }
 .slider.on{
@@ -625,14 +625,45 @@ header nav ul li a.profile p.rank{
 	width: 95%;
 	padding: 2.5%;
 	cursor: pointer;
+	background-color: white;
+	border-bottom: 3px solid #f5f6fa;
 
 }
-#content section.settings ul li p{
-
+#content section.settings ul li p.title{
 	float: left;
 	font-size: .8em;
 	letter-spacing: 1px;
+	height: 20px;
+	padding-left: 35px;
+	margin-top: 5px;
+	line-height: 20px;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: contain;
 
+}
+#content section.settings ul li span.edit{
+	font-size: .8em;
+	letter-spacing: 1px;
+	height: 20px;
+	width: 20px;
+	margin-top: 5px;
+	line-height: 20px;
+	background-image: url(../images/icons/cog.svg);
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: contain;
+	float: right;
+
+}
+#content section.settings ul li p.status{
+	background-image: url(../images/icons/eye.svg);
+}
+#content section.settings ul li p.password{
+	background-image: url(../images/icons/lock_blue.svg);
+}
+#content section.settings ul li p.camera{
+	background-image: url(../images/icons/camera.svg);
 }
 #content section.settings ul li .slidercontainer{
 
