@@ -611,8 +611,8 @@ header nav ul li a.profile p.rank{
 #content section.settings ul{
 
 	display: block;
-	width: 90%;
-	margin: 0 5%;
+	width: 95%;
+	margin: 0 2.5%;
 	float: left;
 	border-radius: .3em;
 	overflow: hidden;
@@ -664,6 +664,9 @@ header nav ul li a.profile p.rank{
 }
 #content section.settings ul li p.camera{
 	background-image: url(../images/icons/camera.svg);
+}
+#content section.settings ul li p.tutorial{
+	background-image: url(../images/icons/head.svg);
 }
 #content section.settings ul li .slidercontainer{
 
@@ -789,6 +792,12 @@ header nav ul li a.profile p.rank{
 		background-color: #e9ebf3;
 		border-radius: .2em;
 		overflow: hidden;
+	}
+	#content section.settings ul li{
+
+		width: 90%;
+		padding: 5%;
+
 	}
 
 	#content section.filters form input[type="text"]{
