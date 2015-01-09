@@ -793,6 +793,24 @@ header nav ul li a.profile p.rank{
 		border-radius: .2em;
 		overflow: hidden;
 	}
+	#content section.filters ul.project_selection li{
+		display: block;
+		color: #445878;
+		float: left;
+		padding: 8px 0px;
+		font-size: 1em;
+		cursor: pointer;
+		text-align: center;
+
+
+
+
+	    -webkit-transition: all .2s ease-in;
+	    -moz-transition: all .2s ease-in;
+	    -ms-transition: all .2s ease-in;
+	    -o-transition: all .2s ease-in;
+	    transition: all .2s ease-in;
+	}
 	#content section.settings ul li{
 
 		width: 90%;
@@ -801,7 +819,9 @@ header nav ul li a.profile p.rank{
 	}
 
 	#content section.filters form input[type="text"]{
-		width: 100%;
+		width: 90%;
+		padding: 0 5%;
+		font-size: 1em;
 	}
 	#content section.filters form select{
 		width: 50%;
