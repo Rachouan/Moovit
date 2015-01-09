@@ -485,6 +485,7 @@ header nav ul li a.profile p.rank{
 	float: left;
 	width: 90%;
 	padding: 5%;
+	height: auto;
 	background-color: #262836;
 }
 #content section.activities ul li div span.date{
@@ -535,8 +536,9 @@ header nav ul li a.profile p.rank{
 #content section.activities ul li div div.detail{
 	float: left;
 	width: 90%;
-	background-color: #ffffff;
+	background-color: #ff00ff;
 	padding: 5%;
+	margin-top: 75px;
 }
 
 
