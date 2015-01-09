@@ -16,10 +16,14 @@ $(function(){
 
 
 
-		$(".activities ul li").on("mousedown",function(){
-			$("#header .calendar").addClass("drop");
-		}).on("mouseup",function () {
-			$("#header .calendar").removeClass("drop");
+		$(".activities ul li").on("click",function(){
+
+			if($(this).attr("class") == "open"){
+				$(this).removeClass("open");
+			}else{
+				$(this).addClass("open");
+			}
+
 		});
 
 		$('.slidercontainer').click(function(e){

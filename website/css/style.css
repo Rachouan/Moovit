@@ -438,18 +438,123 @@ header nav ul li a.profile p.rank{
 #content section.activities ul li{
 	display: block;
 	float: left;
-	width: 40%;
-	margin: 5%;
-	height: 200px;
-	background-color: rgba(0,0,0,.4);
-	border-radius: .5em;
+	position: relative;
+	width: 48%;
+	margin: 1%;
+	height: 250px;
+	background-color: white;
+	border-radius: .3em;
 	cursor: pointer;
+	overflow: hidden;
+
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+}
+#content section.activities ul li.open{
+	z-index: 9997;
+	height: 500px;
+
+	-ms-transform: scale(1.2,1.2); /* IE 9 */
+    -webkit-transform: scale(1.2,1.2); /* Chrome, Safari, Opera */
+    transform: scale(1.2,1.2);
+
+    box-shadow: 0px 0px 15px rgba(0,0,0,.2);
+
+}
+
+#content section.activities ul li img{
+	width: 100%;
+	float: left;
+}
+#content section.activities ul li div{
+	position: absolute;
+	width: 100%;
+	top: 90px;
+}
+#content section.activities ul li div h1{
+	color: white;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: 1em;
+	margin-bottom: 2px;
+}
+#content section.activities ul li div div.detail_small{
+	float: left;
+	width: 90%;
+	padding: 5%;
+	background-color: #262836;
+}
+#content section.activities ul li div span.date{
+	color: #5bc4b4;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: .8em;
+	padding-left: 20px;
+	background-image: url(../images/icons/clock.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#content section.activities ul li div a{
+	text-decoration: none;
+	color: white;
+	font-weight: 300;
+	letter-spacing: 1px;
+	width: 75px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: -20px;
+	padding-left: 7px;
+	text-align: center;
+	background-color: #5bc4b4;
+	float: right;
+	font-size: .8em;
+	border-radius: .3em;
+
+	background-image: url(../images/icons/plus_white.svg);
+	background-repeat: no-repeat;
+	background-size: 12px 12px;
+	background-position: 15px 13px; 
+
+
+
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+
+
+
+}
+#content section.activities ul li div a:hover{
+	background-color: #77e0d0;
+}
+#content section.activities ul li div div.detail{
+	float: left;
+	width: 90%;
+	background-color: #ffffff;
+	padding: 5%;
 }
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*SETTINGS*/
 
 #content section.settings{
 
@@ -596,7 +701,6 @@ header nav ul li a.profile p.rank{
 	float: left;
 	width: 90%;
 	margin: 5%;
-	height: 200px;
 	background-color: rgba(0,0,0,.4);
 	border-radius: .5em;
 }
