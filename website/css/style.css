@@ -52,6 +52,7 @@ header div#header{
 	top: 0px;
 	z-index: 9998;
 	background-color: white;
+	box-shadow: 0px 1px 1px rgba(0,0,0,.1);
 }
 header div#header h1{
 
@@ -396,8 +397,8 @@ header nav ul li a.profile p.rank{
 }
 #content section.filters form{
 	display: block;
-	width: 90%;
-	margin: 0 5%;
+	width: 98%;
+	margin: 0 1%;
 	float: left;
 	margin-top: 20px;
 	background-color: #e9ebf3;
@@ -452,7 +453,7 @@ header nav ul li a.profile p.rank{
 }
 #content section.activities ul li.open{
 	z-index: 9997;
-	height: 500px;
+	height: 450px;
 
 	-ms-transform: scale(1.02,1.02); /* IE 9 */
     -webkit-transform: scale(1.02,1.02); /* Chrome, Safari, Opera */
@@ -467,9 +468,10 @@ header nav ul li a.profile p.rank{
 #content section.activities ul li div{
 	position: absolute;
 	width: 100%;
-	top: 88px;
+	top: 175px;
 }
 #content section.activities ul li div div{
+	position: static;
 	float: left;
 }
 #content section.activities ul li div div.detail_small{
@@ -479,6 +481,7 @@ header nav ul li a.profile p.rank{
 
 #content section.activities ul li div div.detail_big{
 	width: 90%;
+	background-color: white;
 	padding: 5%;
 }
 #content section.activities ul li div div.detail_small h1{
@@ -548,6 +551,32 @@ header nav ul li a.profile p.rank{
 	background-color: white;
 
 }
+#content section.activities ul li div div.detail_big aside{
+	float: right;
+	width: 30%;
+	padding: 5%;
+	height: 200px;
+	background-color: white;
+
+	border-left: 1px rgba(0,0,0,.4);
+
+}
+#content section.activities ul li a.openActivity{
+
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	margin-top:-35px;
+	margin-left: -15px;
+	width: 30px;
+	height: 30px;
+	background-size: contain;
+	background-image: url(../images/icons/ellipsis.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
 
 
 
@@ -712,6 +741,17 @@ header nav ul li a.profile p.rank{
 
 
 @media only screen and (max-width: 600px) {
+
+	#content section.filters form{
+		display: block;
+		width: 95%;
+		margin: 0 2.5%;
+		float: left;
+		margin-top: 20px;
+		background-color: #e9ebf3;
+		border-radius: .2em;
+		overflow: hidden;
+	}
 
 	#content section.filters form input[type="text"]{
 		width: 100%;
