@@ -16,13 +16,15 @@ $(function(){
 
 
 
-		$(".activities ul li").on("click",function(){
+		$(".activities ul li .openActivity").on("click",function(){
 
-			if($(this).attr("class") == "open"){
-				$(this).removeClass("open");
+			if($(this).parent().attr("class") == "open"){
+				$(this).parent().removeClass("open");
 			}else{
-				$(this).addClass("open");
+				$(this).parent().addClass("open");
 			}
+
+			return false;
 
 		});
 

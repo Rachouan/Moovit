@@ -566,14 +566,21 @@ header nav ul li a.profile p.rank{
 	position: absolute;
 	left: 50%;
 	top: 100%;
-	margin-top:-35px;
+	margin-top:-40px;
 	margin-left: -15px;
 	width: 30px;
 	height: 30px;
 	background-size: contain;
-	background-image: url(../images/icons/ellipsis.svg);
+	background-image: url(../images/icons/open.svg);
 	background-repeat: no-repeat;
 	background-position: center;
+
+}
+#content section.activities ul li.open a.openActivity{
+
+	
+	margin-top:-50px;
+	background-image: url(../images/icons/cross.svg);
 
 }
 
