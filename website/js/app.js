@@ -28,6 +28,16 @@ $(function(){
 
 		});
 
+		$(".settings ul li.edit div").on("click",function (e) {
+
+			if($(this).parent().attr("class") == "edit open"){
+				$(this).parent().removeClass("open");
+			}else{
+				$(this).parent().addClass("open");
+			}
+
+		})
+
 		$('.slidercontainer').click(function(e){
 
 			var slider = $(this).find('.slider');

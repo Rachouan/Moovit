@@ -83,17 +83,31 @@
                             </p>
                     </li>
 
-                    <li>
+                    <li class="edit">
+                        <div>
                         <p class="title password">Update your password</p>
-                        
                         <span class="edit"></span>
+                        </div>
+                        <form>
+                            <label for="current password">CURRENT PASSWORD</label>
+                            <input type="password" id="currentPass" name="current password" placeholder="Whats your password..." tabindex="1">
+
+                            <label for="new password">NEW PASSWORD</label>
+                            <input type="password" id="newpass" name="new password" placeholder="Choose a clever new password..."tabindex="2">
+
+                            <label for="repeat password" class="hide">repeat poster</label>
+                            <input type="password" id="repeatpass" name="repeat password" placeholder="And now repeat it..." tabindex="3">
+                        </form>
+
+
                         
                     </li>
 
-                    <li>
+                    <li class="edit">
+                        <div>
                         <p class="title camera">Upload a new profile picture</p>
-                        
                         <span class="edit"></span>
+                        </div>
                         
                     </li>
 
@@ -105,10 +119,11 @@
                     </li>
 
 
-                    <li>
+                    <li class="edit">
+                        <div>
                         <p class="title password">Update your password</p>
-                        
                         <span class="edit"></span>
+                        </div>
                         
                     </li>
                 </ul>

@@ -40,6 +40,9 @@ body{
 	background-color: #f5f6fa;
 	overflow-x:hidden; 
 }
+input:focus{
+	outline: none;
+}
 
 
 
@@ -624,11 +627,56 @@ header nav ul li a.profile p.rank{
 	float: left;
 	width: 95%;
 	padding: 2.5%;
+	height: 30px;
+	overflow: hidden;
 	cursor: pointer;
 	background-color: white;
 	border-bottom: 3px solid #f5f6fa;
+}
+#content section.settings ul li.open{
+	height: auto;
 
 }
+#content section.settings ul li.open p.title{
+
+	font-size: 1.3em;
+}
+#content section.settings ul li div{
+
+	width: 100%;
+	float: left;
+	height: 50px;
+
+}
+#content section.settings ul li form{
+	
+	display: block;
+	width: 70%;
+	padding: 5%;
+	float: left;
+
+}
+#content section.settings ul li form label{
+
+	float: left;
+	width: 100%;
+	margin-bottom: 5px;
+
+	margin-top: 10px;
+
+}
+#content section.settings ul li form input{
+
+	float: left;
+	width: 200px;
+	height: 20px;
+	padding: 5px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	clear: both;
+
+}
+
 #content section.settings ul li p.title{
 	float: left;
 	font-size: .8em;
@@ -640,7 +688,6 @@ header nav ul li a.profile p.rank{
 	background-position: left;
 	background-repeat: no-repeat;
 	background-size: contain;
-
 }
 #content section.settings ul li span.edit{
 	font-size: .8em;
