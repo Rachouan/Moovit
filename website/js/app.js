@@ -54,7 +54,25 @@ $(function(){
 	            slider.parent().parent().addClass("green");
 	        }
 
-    });
+    	});
+
+    	$('.slidercontainer').on("swipe",function(e){
+
+			var slider = $(this).find('.slider');
+
+	        if(slider.attr("class")== "slider on"){
+	            slider.removeClass('on');
+	            slider.addClass('off');
+	            slider.parent().parent().removeClass("green");
+	            slider.parent().parent().addClass("red");
+	        }else{
+	            slider.removeClass('off');
+	            slider.addClass('on');
+	            slider.parent().parent().removeClass("red");
+	            slider.parent().parent().addClass("green");
+	        }
+
+    	});
 		
 	}
 

@@ -13,19 +13,19 @@
 }
 .green{
 	background-color: #5bc4b4 !important;
-	color: white;
+	color: white !important;
 }
 .blue{
 	background-color: #5b9ec4 !important;
-	color: white;
+	color: white !important;
 }
 .yellow{
 	background-color: #e4e255 !important;
-	color: white;
+	color: white !important;
 }
 .red{
 	background-color: #e84e55 !important;
-	color: white;
+	color: white !important;
 }
 .slider.on{
     margin-left: 0px !important;
@@ -42,6 +42,9 @@ body{
 }
 input:focus{
 	outline: none;
+}
+input{
+	-webkit-appearance: none;
 }
 
 
@@ -632,6 +635,14 @@ header nav ul li a.profile p.rank{
 	cursor: pointer;
 	background-color: white;
 	border-bottom: 3px solid #f5f6fa;
+
+
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+
 }
 #content section.settings ul li.open{
 	height: auto;
@@ -651,9 +662,15 @@ header nav ul li a.profile p.rank{
 #content section.settings ul li form{
 	
 	display: block;
-	width: 70%;
+	width: 90%;
 	padding: 5%;
 	float: left;
+
+}
+#content section.settings ul li form div.half{
+	float: left;
+	width: 50%;
+	height: auto;
 
 }
 #content section.settings ul li form label{
@@ -665,12 +682,46 @@ header nav ul li a.profile p.rank{
 	margin-top: 10px;
 
 }
-#content section.settings ul li form input{
+#content section.settings ul li form div.half p{
 
 	float: left;
-	width: 200px;
+	width: 100%;
+	color: #9ba1b8;
+	font-size: .8em;
+	margin-bottom: 20px;
+	margin-top: 20px;
+
+}
+#content section.settings ul li form input[type="button"]{
+	
+	display: block;
+	float: right;
+	border: none;
+	background: none;
+	padding: 10px 20px;
+	border-radius: .3em;
+	color: #9ba1b8;
+	cursor: pointer;
+
+
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+
+}
+#content section.settings ul li form input[type="button"]:hover{
+
+	opacity: .8;
+}
+
+#content section.settings ul li form input[type="password"]{
+
+	float: left;
+	width: 80%;
 	height: 20px;
-	padding: 5px;
+	padding: 2.5%;
 	margin-bottom: 10px;
 	margin-top: 10px;
 	clear: both;
@@ -840,6 +891,9 @@ header nav ul li a.profile p.rank{
 		border-radius: .2em;
 		overflow: hidden;
 	}
+	#content section.settings ul li form input[type="password"]{
+		width: 95%;
+	}
 	#content section.filters ul.project_selection li{
 		display: block;
 		color: #445878;
@@ -848,21 +902,15 @@ header nav ul li a.profile p.rank{
 		font-size: 1em;
 		cursor: pointer;
 		text-align: center;
-
-
-
-
-	    -webkit-transition: all .2s ease-in;
-	    -moz-transition: all .2s ease-in;
-	    -ms-transition: all .2s ease-in;
-	    -o-transition: all .2s ease-in;
-	    transition: all .2s ease-in;
 	}
 	#content section.settings ul li{
 
 		width: 90%;
 		padding: 5%;
 
+	}
+	#content section.settings ul li form div.half{
+		width: 85%;
 	}
 
 	#content section.filters form input[type="text"]{
