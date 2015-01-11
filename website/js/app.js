@@ -78,19 +78,6 @@ $(function(){
 
 	init();
 
-
-	function checkIfMobile (argument) {
-
-		if($(this).width() < mobilewidth){
-
-			$( "html" ).on("swipe",function () {
-				console.log("you swiped");
-			});
-		}else{
-
-		}
-	}
-
 	function openMenu(){
 
 		

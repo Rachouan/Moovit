@@ -43,9 +43,6 @@ body{
 input:focus{
 	outline: none;
 }
-input{
-	-webkit-appearance: none;
-}
 
 
 
@@ -268,18 +265,26 @@ header nav ul li.green:hover{
 header nav ul li:hover{
 	background-color: #2e313f;
 }
+header nav ul li:hover span.indicator{
+	width: 3%;
+}
 header nav ul li.selected{
 	background-color: #262836;
 }
 header nav ul li.selected span.indicator{
-	float: left;
 	width: 5%;
-	height: 100%;
 }
 header nav ul li span.indicator{
 	float: left;
 	width: 1%;
 	height: 100%;
+
+	
+	webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
 }
 header nav ul li a{
 
@@ -650,7 +655,7 @@ header nav ul li a.profile p.rank{
 }
 #content section.settings ul li.open p.title{
 
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 #content section.settings ul li div{
 
