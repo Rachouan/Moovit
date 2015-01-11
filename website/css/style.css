@@ -652,6 +652,8 @@ header nav ul li a.profile p.rank{
     -o-transition: all .2s ease-in;
     transition: all .2s ease-in;
 
+    text-align: center;
+
 }
 #content section.settings ul li.open{
 	height: auto;
@@ -667,6 +669,16 @@ header nav ul li a.profile p.rank{
 	float: left;
 	height: 50px;
 
+}
+#content section.settings ul li div.content{
+
+	margin-top: 20px;
+	height: auto;
+}
+#content section.settings ul li div img.profile{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
 }
 #content section.settings ul li form{
 	

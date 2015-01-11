@@ -28,7 +28,7 @@ $(function(){
 
 		});
 
-		$(".settings ul li.edit div").on("click",function (e) {
+		$(".settings ul li.edit div.edit").on("click",function (e) {
 
 			if($(this).parent().attr("class") == "edit open"){
 				$(this).parent().removeClass("open");
