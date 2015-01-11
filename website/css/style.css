@@ -11,6 +11,10 @@
 .hide{
 	display: none;
 }
+.darkBlue{
+	background-color: #262836 !important;
+	color: white !important;
+}
 .green{
 	background-color: #5bc4b4 !important;
 	color: white !important;
@@ -671,7 +675,8 @@ header nav ul li a.profile p.rank{
 
 }
 #content section.settings ul li div.content{
-
+	
+	position: relative;
 	margin-top: 20px;
 	height: auto;
 }
@@ -699,7 +704,7 @@ header nav ul li a.profile p.rank{
 	float: left;
 	width: 100%;
 	margin-bottom: 5px;
-
+	text-align: left;
 	margin-top: 10px;
 
 }
@@ -714,9 +719,7 @@ header nav ul li a.profile p.rank{
 
 }
 #content section.settings ul li form input[type="button"]{
-	
-	display: block;
-	float: right;
+
 	border: none;
 	background: none;
 	padding: 10px 20px;
@@ -732,6 +735,15 @@ header nav ul li a.profile p.rank{
     transition: all .2s ease-in;
 
 }
+#content section.settings ul li form input[type="button"]#upload{
+	padding: 15px 30px 15px 50px;
+	background-image: url(../images/icons/cloud-upload.svg);
+	background-size: 20px 20px;
+	background-position: 15px center;
+	margin-top: 20px;
+	width: 250px;
+	background-repeat: no-repeat;
+}
 #content section.settings ul li form input[type="button"]:hover{
 
 	opacity: .8;
@@ -745,6 +757,8 @@ header nav ul li a.profile p.rank{
 	padding: 2.5%;
 	margin-bottom: 10px;
 	margin-top: 10px;
+	border-radius: .3em;
+	border: 1px solid rgba(0,0,0,.4);
 	clear: both;
 
 }
