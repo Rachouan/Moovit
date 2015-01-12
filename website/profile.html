@@ -6,9 +6,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Moov-it join activities</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     </head>
@@ -17,7 +18,139 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <header>
+            
+            <div id="header">
+                
+            <h1 class="logo">Moovit</h1>
+
+            <ul>
+                <li class="calendar"></li>
+                <li class="opencalendar">
+                    <ul>
+                        <li class="search"><form><input type="text" id="calendar_search" placeholder="Search for your events ..."></form></li>
+                        <li class="date">Yesterday</li>
+                        <li>Batminton <span class="remove"></span></li>
+                        <li>Batminton <span class="remove"></span></li>
+                        <li class="date">Today</li>
+                        <li>Batminton <span class="remove"></span></li>
+                        <li>Batminton <span class="remove"></span></li>
+                        <li class="date">Tomorrow</li>
+                        <li>Batminton <span class="remove"></span></li>
+                        <li>Batminton <span class="remove"></span></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+            <nav>
+                <header>
+                    <h1 class="hide">Navigation</h1>
+                    <a href="" class="menu"><span class="hide">open menu</span></a>
+                </header>
+                <ul>
+                    <li class="green">
+                        <a href="profile.html" class="profile">
+                            <div class="profilepic">
+                            </div>
+                            <p>Brad Pitt</p>
+                            <p class="rank">Couch potato</p>
+                        </a>
+                    </li>
+                    <li><span class="indicator green"></span><a href="index.html">Dashboard</a></li>
+                    <li><span class="indicator red"></span><a href="#">FAQ</a></li>
+                    <li><span class="indicator yellow"></span><a href="#">Help</a></li>
+                    <li><span class="indicator blue"></span><a href="settings.html">Settings</a></li>
+                    <li>
+                        <a href="#">
+                        STATS
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <article id="content">
+           <section class="achievements">
+                    <ul class="all">
+                        <li>
+                            <img src="images/stats.png"alt="grafiek">
+                            <div>
+                                <div class="profilepic"></div>
+                                <p>Hi, Brad Pitt <p>
+                                <p class="rank">You're now a <b>couch potato<b><p>
+
+                            </div>
+                        </li>
+
+                    </ul>
+           </section>
+
+           <section class="stats heartrate">
+                <ul class="all">
+                    <li>
+
+                        <p class="icon" id="hr">Heartrate</p>
+                        <!-- <p class="bottom">17h  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  18h  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 19h  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  20h </p> -->
+                        <ul class="bottom">
+                            <li>17h</li>
+                            <li>18h</li>
+                            <li>19h</li>
+                            <li>20h</li>
+                        </ul>
+
+                         <ul class="left">
+                            <li>140</li>
+                            <li>120</li>
+                            <li>100</li>
+                            <li>80</li>
+                            <li>60</li>
+
+                        </ul>
+                        <img src="images/stats2.png"alt="grafiek">
+                    </li>
+                </ul>
+           </section>
+
+           <section class="stats bmi">
+                <ul class="all">
+                    <li>
+                        <p class="icon" id="bmi">Body Mass Index</p>
+                        <!-- <p class="bottom">jan&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;feb&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;mar&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;jun&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;apr</p> -->
+                        <ul class="bottom">
+                            <li>jan</li>
+                            <li>feb</li>
+                            <li>mar</li>
+                            <li>apr</li>
+                        </ul>
+
+                         <ul class="left">
+                            <li>29</li>
+                            <li>26</li>
+                            <li>23</li>
+                            <li>20</li>
+                            <li>17</li>
+
+                        </ul>
+                       
+                        <img src="images/stats3.png"alt="grafiek">
+                    </li>
+                </ul>
+           </section>
+
+           <section class="activities">
+                <ul class="all">
+                    <li>
+                        <p class="icon" id="activities">Past activities</p>
+                        
+                    </li>
+                </ul>
+           </section>
+
+
+        </article>
+
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script type="text/javascript" src="js/app.js"></script>
     </body>
 </html>

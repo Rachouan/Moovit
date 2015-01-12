@@ -16,27 +16,15 @@ $(function(){
 
 
 
-		$(".activities ul li .openActivity").on("click",function(){
+		$(".activities ul li").on("click",function(){
 
-			if($(this).parent().attr("class") == "open"){
-				$(this).parent().removeClass("open");
+			if($(this).attr("class") == "open"){
+				$(this).removeClass("open");
 			}else{
-				$(this).parent().addClass("open");
+				$(this).addClass("open");
 			}
-
-			return false;
 
 		});
-
-		$(".settings ul li.edit div.edit").on("click",function (e) {
-
-			if($(this).parent().attr("class") == "edit open"){
-				$(this).parent().removeClass("open");
-			}else{
-				$(this).parent().addClass("open");
-			}
-
-		})
 
 		$('.slidercontainer').click(function(e){
 
@@ -47,20 +35,7 @@ $(function(){
 	            slider.addClass('off');
 	            slider.parent().parent().removeClass("green");
 	            slider.parent().parent().addClass("red");
-	        }else{
-	            slider.removeClass('off');
-	            slider.addClass('on');
-	            slider.parent().parent().removeClass("red");
-	            slider.parent().parent().addClass("green");
-	        }
-
-    	});
-
-    	$('.slidercontainer').on("swipe",function(e){
-
-			var slider = $(this).find('.slider');
-
-	        if(slider.attr("class")== "slider on"){
+	        }else if(slider.attr("class")== "slider"){
 	            slider.removeClass('on');
 	            slider.addClass('off');
 	            slider.parent().parent().removeClass("green");
@@ -72,11 +47,24 @@ $(function(){
 	            slider.parent().parent().addClass("green");
 	        }
 
-    	});
+    });
 		
 	}
 
 	init();
+
+
+	function checkIfMobile (argument) {
+
+		if($(this).width() < mobilewidth){
+
+			$( "html" ).on("swipe",function () {
+				console.log("you swiped");
+			});
+		}else{
+
+		}
+	}
 
 	function openMenu(){
 
