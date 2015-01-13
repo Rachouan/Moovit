@@ -108,7 +108,7 @@ header div#header ul li.calendar{
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-image: url(../images/icons/notification_icon.png);
+	background-image: url(../images/icons/mycal.png);
 	cursor: pointer;
 
 
@@ -145,10 +145,9 @@ header div#header ul li.opencalendar ul li{
 header div#header ul li.opencalendar ul li span{
 	display: block;
 	float: right;
-	height: 40px;
-	width: 60px;
-	/*background-image: url(../images/icons/remove.svg);*/
-     background-image:url(../images/icons/notif.png);
+	height: 20px;
+	width: 20px;
+	background-image: url(../images/icons/remove.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
