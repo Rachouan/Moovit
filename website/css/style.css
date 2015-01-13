@@ -864,14 +864,50 @@ article footer{
 	text-align: center;
 }
 article footer header{
-	font-size: .8em;
+	font-size: .7em;
 	color: rgba(0,0,0,.5);
+	font-weight: lighter;
+}
+article footer p{
+	font-size: .8em;
+	color: rgba(0,0,0,.2);
+	letter-spacing: 1px; 
+}
+article footer p span{
+	color: #e84e55 !important;
+}
+
+article footer ul li{
+	display: inline-block;
+	margin: 20px 5px;
+
+	webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+}
+article footer ul li a{
+	text-decoration: none;
+	color: rgba(0,0,0,.4);
+
+
+}
+article footer ul li:hover{
+
+	-moz-transform: translateY(2px);
+	-webkit-transform: translateY(2px);
+	-o-transform: translateY(2px);
+	-ms-transform: translateY(2px);
+	transform: translateY(2px);
+
 }
 article footer img{
 
 	width: 300px;
 	margin: 30px 0 40px
 }
+
 
 /*END FOOTER*/
 
