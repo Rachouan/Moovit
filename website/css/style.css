@@ -374,6 +374,14 @@ header nav ul li a.profile p.rank{
 	width: 100%;
 	padding-top: 20px;
 }
+#content section.content{
+
+	padding-bottom: 100px;
+	background-image: url(../images/icons/logo_light.png);
+	background-size: 50px 50px;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
 #content section.filters{
 
 	padding-top: 75px;
@@ -832,6 +840,30 @@ header nav ul li a.profile p.rank{
 
 }
 /*end Content*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+article footer{
+	
+	float: left;
+	width: 80%;
+	padding: 10%;
+	border-top: 1px solid rgba(0,0,0,.1);
+	margin-top: 50px;
+}
+
+/*END FOOTER*/
 
 
 
