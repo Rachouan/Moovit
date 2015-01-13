@@ -83,12 +83,14 @@ $(function(){
 		
 		if($("nav").attr("class") == "open"){
 			$( "nav" ).removeClass("open");
-			$( ".menu" ).removeClass("close");
+			$( ".menu" ).removeClass("icon-cross");
+			$( ".menu" ).addClass("icon-menu");
 			$("article").removeClass("blur");
 			$("#header").removeClass("blur");
 		}else{
 			$( "nav" ).addClass("open");
-			$( ".menu" ).addClass("close");
+			$( ".menu" ).removeClass("icon-menu");
+			$( ".menu" ).addClass("icon-cross");
 			$("article").addClass("blur");
 			$("#header").addClass("blur");
 		}
