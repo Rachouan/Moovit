@@ -14,6 +14,20 @@ $(function(){
 				openMenu();
 			});
 
+		$(".calendar").on("click",function (e) {
+				e.preventDefault();
+				console.log("click");
+				openNotificatoin();
+			});
+
+		
+
+		$("nav header .menu").on("click",function (e) {
+				e.preventDefault();
+				console.log("click");
+				openMenu();
+			});
+
 
 
 		$(".activities ul li .openActivity").on("click",function(){
@@ -77,6 +91,15 @@ $(function(){
 	}
 
 	init();
+
+	function openNotificatoin (argument) {
+
+		if($(".opencalendar").attr("class") == "opencalendar open"){
+			$( ".opencalendar" ).removeClass("open");
+		}else{
+			$( ".opencalendar" ).addClass("open");
+		}
+	}
 
 	function openMenu(){
 
