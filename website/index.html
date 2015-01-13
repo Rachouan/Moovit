@@ -31,7 +31,6 @@
                 <li class="calendar icon-bell"></li>
                 <li class="opencalendar">
                     <ul>
-                       <!-- <li class="search"><form><input type="text" id="calendar_search" placeholder="Search for your events ..."></form></li>-->
                         <li class="date">you have 2 new notifications</li>
                         <li>Angelina invited you to join a  group :<br>'the Speedy Gonzaleses' <span class="remove"></span></li>
                         <li>George Clooney invited you to an archery event <br>on  18/12/15 at 4pm <br> in the 'Robin Hood Archery Club'<br>Los Angeles<span class="remove"></span></li>
@@ -78,13 +77,20 @@
                 </ul>
                 <form>
                     <input type="text" id="dashboard_search" placeholder="look for activities ..." tabindex="1" autofocus>
-                    <select>
-                      <option value="volvo">Volvo</option>
-                      <option value="saab">Saab</option>
-                      <option value="mercedes">Mercedes</option>
-                      <option value="audi">Audi</option>
-                    </select>
-                    <input type="date" name="activitydate" max="3015-12-31" value="2014-12-22">
+                    
+                    <div class="half">
+                        <label class="icon-anchor" for="category"></label>
+                        <select id="category">
+                          <option value="volvo">Volvo</option>
+                          <option value="saab">Saab</option>
+                          <option value="mercedes">Mercedes</option>
+                          <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                    <div class="half">
+                        <label class="icon-clock" for="date"></label>
+                        <input type="date" name="activitydate" id="date" max="3015-12-31" value="2014-12-22">
+                    </div>
                 </form>
             </section>
 

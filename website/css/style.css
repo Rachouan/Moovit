@@ -429,6 +429,10 @@ header nav ul li a.profile p.rank{
 	border-radius: .2em;
 	overflow: hidden;
 }
+#content section.filters form div.half{
+	float: left;
+	width: 22%;
+}
 #content section.filters form input[type="text"]{
 	float: left;
 	width: 50%;
@@ -439,20 +443,27 @@ header nav ul li a.profile p.rank{
 #content section.filters form input:focus{
 	outline-width: 0px;
 }
-#content section.filters form select{
-	float: left;
-	background: none;
-	border: none;
-	width: 10%;
-	height: 50px;
-	text-align: center;
-}
-#content section.filters form input[type="date"]{
-
+#content section.filters form div.half label{
 	float: left;
 	width: 30%;
 	height: 50px;
-	padding: 0 2.5%;
+	text-align: center;
+	line-height: 50px;
+}
+#content section.filters form div.half select{
+	float: left;
+	background: none;
+	border: none;
+	width: 70%;
+	height: 50px;
+	text-align: center;
+}
+#content section.filters form  div.half input[type="date"]{
+
+	float: left;
+	width: 70%;
+	height: 50px;
+	line-height: 50px;
 	border: none;
 	text-align: center;
 	background: none;
@@ -1027,8 +1038,8 @@ article footer img{
 	#content section.filters form select{
 		width: 50%;
 	}
-	#content section.filters form input[type="date"]{
-		width: 40%;
+	#content section.filters form div.half{
+		width: 50%;
 	}
 	#content section.activities ul li{
 	width: 95%;
