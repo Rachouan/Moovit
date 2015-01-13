@@ -9,25 +9,15 @@ $(function(){
 		console.log("INITIALISE");
 
 		$("nav header .menu").on("click",function (e) {
-				e.preventDefault();
-				console.log("click");
-				openMenu();
-			});
+			e.preventDefault();
+			console.log("click");
+			openMenu();
+		});
 
 		$(".calendar").on("click",function (e) {
-				e.preventDefault();
-				console.log("click");
-				openNotificatoin();
-			});
-
-		
-
-		$("nav header .menu").on("click",function (e) {
-				e.preventDefault();
-				console.log("click");
-				openMenu();
-			});
-
+			console.log("click");
+			openNotification();
+		});
 
 
 		$(".activities ul li .openActivity").on("click",function(){
@@ -92,7 +82,7 @@ $(function(){
 
 	init();
 
-	function openNotificatoin (argument) {
+	function openNotification () {
 
 		if($(".opencalendar").attr("class") == "opencalendar open"){
 			$( ".opencalendar" ).removeClass("open");
@@ -106,12 +96,14 @@ $(function(){
 		
 		if($("nav").attr("class") == "open"){
 			$( "nav" ).removeClass("open");
+			$("body").removeClass("overflow");
 			$( ".menu" ).removeClass("icon-cross");
 			$( ".menu" ).addClass("icon-menu");
 			$("article").removeClass("blur");
 			$("#header").removeClass("blur");
 		}else{
 			$( "nav" ).addClass("open");
+			$("body").addClass("overflow");
 			$( ".menu" ).removeClass("icon-menu");
 			$( ".menu" ).addClass("icon-cross");
 			$("article").addClass("blur");
