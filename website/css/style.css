@@ -291,6 +291,11 @@ header nav ul li span.indicator{
 	-o-transition: all .2s ease-out;
 	transition: all .2s ease-out;
 }
+header nav ul li span.icon{
+
+	color: rgba(255,255,255,.3);
+	margin-right: 10px;
+}
 header nav ul li a{
 
 	float: left;
@@ -298,7 +303,7 @@ header nav ul li a{
 	height: 80%;
 	line-height: 75px;
 	width: 50%;
-	padding: 0 15%;
+	padding: 0 10%;
 	margin-left: 30px;
 	text-decoration: none;
 	color: white;
@@ -590,15 +595,43 @@ header nav ul li a.profile p.rank{
 	background-color: white;
 
 }
+#content section.activities ul li div div.detail_big div p{
+
+	float: left;
+	margin-bottom: 20px;
+
+}
+#content section.activities ul li div div.detail_big div span{
+
+	float: left;
+	font-size: .8em;
+
+}
 #content section.activities ul li div div.detail_big aside{
 	float: right;
-	width: 30%;
-	padding: 5%;
+	width: 39%;
 	height: 200px;
 	background-color: white;
 
-	border-left: 1px rgba(0,0,0,.4);
+	border-left: 1px solid rgba(0,0,0,.1);
 
+}
+#content section.activities ul li div div.detail_big aside div{
+
+	float: left;
+	width: 90%;
+	padding: 5%;
+	height: auto;
+	font-size: .8em;
+	color: rgba(0,0,0,.4);
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	
+}
+#content section.activities ul li div div.detail_big aside div h1{
+
+	float: left;
+	margin-bottom: 10px;
+	
 }
 #content section.activities ul li a.openActivity{
 
