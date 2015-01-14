@@ -112,7 +112,7 @@
 .left {
 	position: absolute;
 	height: 100%;
-	top: 50px;
+	top: 40px;
 	left: 20px;
 }
 
@@ -124,7 +124,7 @@
 
 .bottom {
 	position: absolute;
-	top: 225px;
+	top: 215px;
 	width: 100%;
 }
 
@@ -155,13 +155,13 @@
 
 #act1{
 	position: absolute;
-	background-image: url(../images/activities/14372035815_7ded626494_b.jpg);
+	background-image: url(../images/activities/1.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 30%;
-	height: 195px;
-	top: 55px;
+	height: 185px;
+	top: 45px;
 	left: 3%;
 	list-style-type: none;
 	border-radius: .3em;
@@ -169,13 +169,13 @@
 
 #act2{
 	position: absolute;
-	background-image: url(../images/activities/14503608185_0b7d2bd675_b.jpg);
+	background-image: url(../images/activities/2.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 30%;
-	height: 195px;
-	top: 55px;
+	height: 185px;
+	top: 45px;
 	left: 35%;
 	list-style-type: none;
 	border-radius: .3em;
@@ -183,13 +183,13 @@
 
 #act3{
 	position: absolute;
-	background-image: url("../images/activities/iStock_000023415437_Large kopie 1 MB.jpeg");
+	background-image: url(../images/activities/3.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 30%;
-	height: 195px;
-	top: 55px;
+	height: 185px;
+	top: 45px;
 	right: 3%;
 	list-style-type: none;
 	border-radius: .3em;
