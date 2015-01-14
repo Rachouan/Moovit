@@ -81,20 +81,51 @@ article section.login span{
 
 article section.login form ul li{
   display: block;
+  float: left;
   width: 100%;
+  margin-bottom: 20px;
 }
 article section.login form ul li label{
+  float: left;
   width: 5%;
-  padding: 2.5%;
+  padding: 4%;
   background-color: white;
+  text-align: center;
   border-radius: .3em 0 0 .3em;
+  color: #3d4151;
   border-right: 1px solid rgba(0,0,0,.1); 
 }
-article section.login form ul li input{
+article section.login form ul li label.plain{
+  float: left;
+  width: auto;
+  padding: 0%;
+  font-size: .8em;
+  background-color: white;
+  text-align: left;
+  border-radius: 0;
+  border: none;
+  background: no-repeat;
+  color: white;
+}
+article section.login form ul li input[type="checkbox"]{
+  float: left;
+  margin-right: 20px;
+}
+article section.login form ul li input.text{
   display: block;
   width: 75%;
-  padding: 2.5%;
+  padding: 4.5%;
   float: left;
+  border: none;
+  border-radius: 0 .3em .3em 0;
+}
+
+article section.login a{
+
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: #3d4151;
 }
 
 
