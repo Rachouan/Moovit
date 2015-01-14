@@ -1030,6 +1030,7 @@ header nav ul li a.profile p.rank{
 
 
 
+
 /* FAQ*/
 #content section.faq #box {
 	display: block;
@@ -1046,10 +1047,11 @@ header nav ul li a.profile p.rank{
 }
 
 #content section.faq .blauw {
-		color:66cccc;
+		color:#66cccc;
 		}
 #content section.faq .grijs {
-	color:999999;
+	color:#999999;
+	
 }
 
 #content section.faq #box h1{
@@ -1061,6 +1063,16 @@ header nav ul li a.profile p.rank{
 #content section.faq #box p{
 	padding-top:30px;
 	padding-left:15px;
+}
+
+
+
+#content section.filters form input[type="ask"]{
+	float: left;
+	width: 73%;
+	padding: 0 2.5%;
+	height: 50px;
+	border: none;
 }
 
 
