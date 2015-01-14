@@ -832,7 +832,6 @@ header nav ul li a.profile p.rank{
 	font-size: .8em;
 	letter-spacing: 1px;
 	height: 20px;
-	padding-left: 35px;
 	margin-top: 5px;
 	line-height: 20px;
 	background-position: left;
@@ -853,18 +852,7 @@ header nav ul li a.profile p.rank{
 	float: right;
 
 }
-#content section.settings ul li p.status{
-	background-image: url(../images/icons/eye.svg);
-}
-#content section.settings ul li p.password{
-	background-image: url(../images/icons/lock_blue.svg);
-}
-#content section.settings ul li p.camera{
-	background-image: url(../images/icons/camera.svg);
-}
-#content section.settings ul li p.tutorial{
-	background-image: url(../images/icons/head.svg);
-}
+
 #content section.settings ul li .slidercontainer{
 
     position: relative;
@@ -894,6 +882,17 @@ header nav ul li a.profile p.rank{
     transition: all 0.15s ease-out;
 
 }
+
+#content section.settings span.icon{
+	font-size: 1.5em;
+	color: rgba(90,190,180,1);
+	margin-right: 15px;
+}
+
+#content section.settings span.dark{
+	color: rgba(0,0,0,.5);
+}
+
 /*end Content*/
 
 
