@@ -960,8 +960,12 @@ header nav ul li a.profile p.rank{
 	height: 50px;
 	border-radius: .3em;
 	overflow: hidden;
+	opacity: .9;
 	background-color: white;
 
+}
+#content section.help ul li:hover{
+	opacity: 1;
 }
 #content section.help ul li.open{
 
