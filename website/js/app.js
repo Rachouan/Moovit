@@ -19,6 +19,21 @@ $(function(){
 			openNotification();
 		});
 
+		$( window ).resize(function() {
+
+			if($(this).width() <= 1100){
+
+				$( "nav" ).removeClass("open");
+				$("body").removeClass("overflow");
+				$( ".menu" ).removeClass("icon-cross");
+				$( ".menu" ).addClass("icon-menu");
+				$("article").removeClass("blur");
+				$("#header").removeClass("blur");
+
+			}
+
+		});
+
 
 		$(".activities ul li .openActivity").on("click",function(){
 
@@ -26,6 +41,22 @@ $(function(){
 				$(this).parent().removeClass("open");
 			}else{
 				$(this).parent().addClass("open");
+			}
+
+			return false;
+
+		});
+
+		$(".help ul li h1").on("click",function(){
+
+			if($(this).parent().attr("class") == "open"){
+				$(this).parent().removeClass("open");
+				$(this).find("span").addClass("icon-maximize");
+				$(this).find("span").removeClass("icon-minimize");
+			}else{
+				$(this).parent().addClass("open");
+				$(this).find("span").removeClass("icon-maximize");
+				$(this).find("span").addClass("icon-minimize");
 			}
 
 			return false;

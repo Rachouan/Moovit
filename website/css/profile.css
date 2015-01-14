@@ -1,0 +1,756 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+@font-face {font-family: Bariol;
+	src: url(../fonts/Bariol_Regular.otf);
+}
+.blur{
+	opacity: .1 !important;
+}
+.hide{
+	display: none;
+}
+.darkBlue{
+	background-color: #262836 !important;
+	color: white !important;
+}
+.green{
+	background-color: #5bc4b4 !important;
+	color: white !important;
+}
+.blue{
+	background-color: #5b9ec4 !important;
+	color: white !important;
+}
+.yellow{
+	background-color: #e4e255 !important;
+	color: white !important;
+}
+.red{
+	background-color: #e84e55 !important;
+	color: white !important;
+}
+.slider.on{
+    margin-left: 0px !important;
+}
+.slider.off{
+
+    margin-left: 15px !important;
+}
+
+body{
+	font-family: Bariol;
+	background-color: #f5f6fa;
+	overflow-x:hidden; 
+}
+input:focus{
+	outline: none;
+}
+input{
+
+	-webkit-appearance: none;
+}
+
+
+
+/*header*/
+header div#header{
+	position: fixed;
+	width: 100%;
+	left: 0px;
+	height: 75px;
+	top: 0px;
+	z-index: 9998;
+	background-color: rgba(255,255,255,.95);
+	box-shadow: 0px 1px 1px rgba(0,0,0,.1);
+}
+header div#header h1{
+
+	position: absolute;
+	display: block;
+	left: 57%;
+	width: 120px;
+	height: 80px;
+	text-align: right;
+	line-height: 80px;
+	margin-left: -65px;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-image: url(../images/icons/logo.png);
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	background-position: left;
+}
+header div#header a.menu{
+	display: none;
+	float: left;
+	width: 75px;
+	height: 75px;
+	margin-left: 250px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../images/icons/menu.png);
+}
+header div#header ul{
+	float: right;
+}
+header div#header ul li{
+	display: block;
+	float: right;
+}
+header div#header ul li.calendar{
+	width: 75px;
+	height: 75px;
+
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../images/icons/notification_icon.png);
+	cursor: pointer;
+
+
+
+
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+header div#header ul li.opencalendar{
+	position: fixed;
+	display: none;
+	left: 100%;
+	margin-left: -250px;
+	top: 75px;
+	width: 250px;
+	height: 350px;
+	border-radius: 0 0 0 .5em;
+	background-color: #333645;
+	overflow-y: scroll;
+}
+header div#header ul li.opencalendar ul li{
+	display: block;
+	float: left;
+	width: 200px;
+	padding: 25px;
+	font-size: .8em;
+	color: white;
+	cursor: pointer;
+
+}
+header div#header ul li.opencalendar ul li span{
+	display: block;
+	float: right;
+	height: 40px;
+	width: 60px;
+	/*background-image: url(../images/icons/remove.svg);*/
+     background-image:url(../images/icons/notif.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+}
+header div#header ul li.opencalendar ul li:hover{
+	background-color: #3d4151;
+
+}
+header div#header ul li.opencalendar ul li.search{
+	padding: 0px;
+
+}
+header div#header ul li.opencalendar ul li form input[type="text"]{
+	display: block;
+	float: left;
+	width: 220px;
+	padding:15px;
+	text-align: left;
+	font-size: .8em;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	color: white;
+	background:none;
+	border: none;
+
+}
+header div#header ul li.opencalendar ul li form input[type="text"]:focus{
+	outline-width: 0px;
+
+}
+header div#header ul li.opencalendar ul li.date{
+	text-align: center;
+	color: white;
+	padding: 10px 25px;
+	background-color: #262836;
+	
+}
+/*end header*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*NAVIGATION*/
+header nav{
+	position: fixed;
+	background-color: #333645;
+	width: 250px;
+	height: 100%;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+
+    -webkit-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
+    -ms-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+
+
+}
+header nav header{
+	float: left;
+	position: relative;
+
+}
+header nav header a.menu{
+	display: none;
+	position: absolute;
+	left: 250px;
+	width: 75px;
+	height: 75px;
+	margin-left: 250px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../images/icons/menu.png);
+
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.close{
+	background-image: url(../images/icons/close.png) !important;
+}
+header nav ul{
+position: absolute;
+left: 0;
+top: 0;
+overflow: hidden;
+float: left;
+width: 100%;
+height: 100%;
+}
+header nav ul li{
+	display: block;
+	float: left;
+	width: 250px;
+	height: 75px;
+	cursor: pointer;
+
+	webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+}
+header nav ul li.green:hover{
+	background-color: #6acfc0;
+}
+header nav ul li:hover{
+	background-color: #2e313f;
+}
+header nav ul li:hover span.indicator{
+	width: 3%;
+}
+header nav ul li.selected{
+	background-color: #262836;
+}
+header nav ul li.selected span.indicator{
+	width: 5%;
+}
+header nav ul li span.indicator{
+	float: left;
+	width: 1%;
+	height: 100%;
+
+
+	webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+}
+header nav ul li a{
+
+	float: left;
+	display: block;
+	height: 80%;
+	line-height: 75px;
+	width: 50%;
+	padding: 0 15%;
+	margin-left: 30px;
+	text-decoration: none;
+	color: white;
+	letter-spacing: 1px;
+}
+header nav ul li a.profile{
+
+	float: left;
+	display: block;
+	height: 80%;
+	line-height: normal;
+	width: 80%;
+	padding: 10%;
+	margin-left: 0;
+	text-decoration: none;
+	color: white;
+}
+header nav ul li a.profile div.profilepic{
+
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-left: -5px;
+	margin-top: -5px;
+	border-radius: 50%;
+	background-image: url(../images/profile-pictures/main.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+header nav ul li a.profile p{
+
+	float: left;
+	font-size: .8em;
+	width: 50%;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+header nav ul li a.profile p.rank{
+
+	float: left;
+	font-size: .8em;
+	width: 50%;
+	margin-left: 10px;
+	font-weight: normal;
+}
+/*END NAVIGATION*/
+
+
+
+
+
+
+
+
+/*PROFILE*/
+
+#content{
+	position: absolute;
+	width: 800px;
+	left: 57%;
+	margin-left: -400px;
+	padding-top: 30px;
+}
+
+#content div{
+	float: left;
+	width: 100%;
+	padding-top: 20px;
+}
+
+#content div.achievements ul li{
+	display: block;
+	float: left;
+	position: relative;
+	width: 98%;
+	margin: 1%;
+	height: 250px;
+	background-color: white;
+	border-radius: .3em;
+	cursor: pointer;
+	overflow: hidden;
+	top: 50px;
+	background-image: url(images/stats.png);
+}
+
+#content div.achievements ul li div{
+	position: absolute;
+	width: 90%;
+	padding: 5%;
+	height: auto;
+}
+
+#content div.achievements ul li img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#content div.achievements ul li .profilepic{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-image: url(../images/profile-pictures/main.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#content div.achievements ul li p{
+	text-indent: 130px;
+	padding-top: 20px;
+}
+
+#content div.achievements ul li p.rank{
+	color: white;
+	padding-top: 10px;
+}
+
+#content div.stats{
+	display: block;
+	float: left;
+	position: relative;
+	width: 48%;
+	margin: 1%;
+	height: 250px;
+	background-color: white;
+	border-radius: .3em;
+	cursor: pointer;
+	overflow: hidden;
+	top: 50px;
+}
+
+#content div.stats ul li img{
+	position: absolute;
+	width: 100%;
+	height: 150%;
+	top: -40%;
+}
+#content div.heartrate{
+	background-image: url(../images/stats2.png);
+	background-size: 100% 300px;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+
+#content div.bmi{
+	background-image: url(../images/stats3.png);
+	background-size: 100% 300px;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+
+#content div.stats span{
+	margin-right: 7px;
+}
+#content div.past span{
+	margin-right: 7px;
+}
+
+.stats ul li p{
+	margin-left: 20px;
+}
+
+.left {
+	position: absolute;
+	height: 100%;
+	top: 50px;
+	left: 20px;
+}
+
+.left li{
+	list-style-type: none;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.bottom {
+	position: absolute;
+	top: 225px;
+	width: 100%;
+}
+
+.bottom li{
+	margin-left: 15%;
+	list-style-type: none;
+	display: inline;
+	color: white;
+}
+
+#content div.past {
+	display: block;
+	float: left;
+	position: relative;
+	width: 98%;
+	margin: 1%;
+	height: 250px;
+	background-color: white;
+	border-radius: .3em;
+	cursor: pointer;
+	overflow: hidden;
+	top: 50px;
+}
+
+#content div.past ul li p{
+	margin-left: 20px;
+}
+
+#act1{
+	position: absolute;
+	background-image: url(../images/activities/14372035815_7ded626494_b.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 30%;
+	height: 195px;
+	top: 55px;
+	left: 3%;
+	list-style-type: none;
+	border-radius: .3em;
+}
+
+#act2{
+	position: absolute;
+	background-image: url(../images/activities/14503608185_0b7d2bd675_b.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 30%;
+	height: 195px;
+	top: 55px;
+	left: 35%;
+	list-style-type: none;
+	border-radius: .3em;
+}
+
+#act3{
+	position: absolute;
+	background-image: url("../images/activities/iStock_000023415437_Large kopie 1 MB.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 30%;
+	height: 195px;
+	top: 55px;
+	right: 3%;
+	list-style-type: none;
+	border-radius: .3em;
+}
+
+/*END PROFILE*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MOBILE*/
+@media only screen and (max-width: 1080px) {
+	header nav{
+		left: -250px;
+	}
+	header nav ul{
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow-y: scroll;
+	float: left;
+	width: 100%;
+	height: 100%;
+	}
+	header nav.open{
+		left: 0;
+	}
+	#content{
+		left: 50%
+	}
+	#content section.activities ul li.open{
+		-ms-transform: scale(1,1); /* IE 9 */
+	    -webkit-transform: scale(1,1); /* Chrome, Safari, Opera */
+	    transform: scale(1,1);
+
+	}
+	
+	header div#header h1{
+		left: 50%;
+	}
+	header nav header a.menu{
+		width: 50px;
+		height: 50px;
+		margin:10px;
+		display: block;
+	}
+
+
+
+
+	/*PROFILE*/
+
+
+
+	/*PROFILE END*/
+
+
+
+
+
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+	header nav{
+		left: -250px;
+	}
+	header nav.open{
+		left: 0;
+	}
+	#content{
+		float: left;
+		position: static;
+		width: 100%;
+		left: 0;
+		margin-left: 0px;
+	}
+	
+	header div#header h1{
+		left: 50%;
+	}
+	header nav header a.menu{
+		width: 50px;
+		height: 50px;
+		margin:10px;
+		display: block;
+	}
+
+
+/*PROFILE*/
+
+
+/*END PROFILE*/
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+
+
+	#content section.filters form{
+		display: block;
+		width: 95%;
+		margin: 0 2.5%;
+		float: left;
+		margin-top: 20px;
+		background-color: #e9ebf3;
+		border-radius: .2em;
+		overflow: hidden;
+	}
+	#content section.settings ul li form input[type="password"]{
+		width: 95%;
+	}
+	#content section.filters ul.project_selection li{
+		display: block;
+		color: #445878;
+		float: left;
+		padding: 8px 0px;
+		font-size: 1em;
+		cursor: pointer;
+		text-align: center;
+	}
+	#content section.settings ul li{
+
+		width: 90%;
+		padding: 5%;
+
+	}
+	#content section.settings ul li form div.half{
+		width: 85%;
+	}
+
+	#content section.filters form input[type="text"]{
+		width: 90%;
+		padding: 0 5%;
+		font-size: 1em;
+	}
+	#content section.filters form select{
+		width: 50%;
+	}
+	#content section.filters form input[type="date"]{
+		width: 40%;
+	}
+	#content section.activities ul li{
+	width: 95%;
+	margin: 2.5%;
+	}
+
+	#content div {
+		width: 95%;
+	margin: 2.5%;
+	}
+
+
+	/*PROFILE*/
+
+	#content div.stats{
+		width: 95%;
+		margin: 2.5%;
+	}
+
+	#content div.achievements{
+		width: 95%;
+		margin: 2.5%;
+	}
+
+	#content div.past{
+		width: 95%;
+		margin: 2.5%;
+		height: auto;
+	}
+
+	#content div.past ul li ul li.acts{
+		width: 95%;
+		margin: 2.5%;
+		float: left;
+		display: block;
+		position: static;
+	}
+
+	/*END PROFILE*/
+}
