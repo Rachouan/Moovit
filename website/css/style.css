@@ -43,7 +43,7 @@
 }
 
 body{
-	font-family: Bariol;
+	font-family: Bariol,sans-serif,helvetica;
 	background-color: #f5f6fa;
 	overflow-x:hidden; 
 }
