@@ -569,11 +569,6 @@ header nav ul li a.profile p.rank{
 	letter-spacing: 1px;
 	font-weight: normal;
 	font-size: .8em;
-	padding-left: 20px;
-	background-image: url(../images/icons/clock.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: left;
 }
 #content section.activities ul li div div.detail_small a{
 	text-decoration: none;
@@ -647,6 +642,23 @@ header nav ul li a.profile p.rank{
 	font-size: .8em;
 	color: rgba(0,0,0,.4);
 	border-bottom: 1px solid rgba(0,0,0,.1);
+	
+}
+#content section.activities ul li div div.detail_big aside div ul li{
+
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: rgba(0,0,0,.3);
+	border-radius: 50%;
+	margin: 5px;
+	overflow: hidden;
+	
+}
+#content section.activities ul li div div.detail_big aside div ul li img{
+
+	width: 100%;
+	float: left;
 	
 }
 #content section.activities ul li div div.detail_big aside div h1{
