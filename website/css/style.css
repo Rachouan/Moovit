@@ -1004,7 +1004,7 @@ header nav ul li a.profile p.rank{
 
 
 /* FAQ*/
-#content section.help #box {
+#content section.faq #box {
 	display: block;
 	float: left;
 	position: relative;
@@ -1018,20 +1018,20 @@ header nav ul li a.profile p.rank{
 	overflow: hidden;
 }
 
-#content section.help .blauw {
+#content section.faq .blauw {
 		color:66cccc;
 		}
-#content section.help .grijs {
+#content section.faq .grijs {
 	color:999999;
 }
 
-#content section.help #box h1{
+#content section.faq #box h1{
 	
 	padding-top:10px;
 	padding-left:15px;
 }
 
-#content section.help #box p{
+#content section.faq #box p{
 	padding-top:30px;
 	padding-left:15px;
 }
