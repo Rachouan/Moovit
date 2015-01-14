@@ -274,6 +274,18 @@ header nav ul li{
 	-o-transition: all .2s ease-out;
 	transition: all .2s ease-out;
 }
+header nav ul li.stats{
+	height: auto;
+	font-size: .8em;
+}
+header nav ul li.stats a{
+	height: 250px;
+	background-image: url(../images/navigation/circle.svg);
+	background-size: 150px 150px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: center;
+}
 header nav ul li.green:hover{
 	background-color: #42a092 !important;
 }
