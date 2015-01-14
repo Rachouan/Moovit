@@ -60,6 +60,7 @@ article section.login{
   margin: 50px auto;
   width:350px;
   padding: 20px;
+  height: 350px;
   background-color: #8bd5ca;
   border-radius: .3em;
 
@@ -140,10 +141,15 @@ article section.login a{
 
   display: block;
   float: left;
-  width: 100%;
+  width: 390px;
   height: 50px;
   text-decoration: none;
   color: white;
+  text-align: center;
+  line-height: 50px;
+  background-color: #3d4151;
+  margin-left: -5.5%;
+  border-radius: 0 0 .3em .3em;
 }
 
 
