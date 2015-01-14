@@ -5,6 +5,9 @@
 @font-face {font-family: Bariol;
 	src: url(fonts/Bariol_Regular.otf);
 }
+.hide{
+  display: none;
+}
 
 input:focus{
   outline: none;
@@ -136,6 +139,7 @@ article section.login form ul li input.text{
 article section.login a{
 
   display: block;
+  float: left;
   width: 100%;
   height: 50px;
   text-decoration: none;
