@@ -53,7 +53,7 @@
 }
 
 #content div.achievements ul li p{
-	text-indent: 130px;
+	padding-left: 20%;
 	padding-top: 20px;
 }
 
@@ -326,6 +326,10 @@
 		float: left;
 		display: block;
 		position: static;
+	}
+
+	#content div.achievements ul li p{
+		padding-left: 30%;
 	}
 
 	/*END PROFILE*/
