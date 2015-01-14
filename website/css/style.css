@@ -1003,6 +1003,45 @@ header nav ul li a.profile p.rank{
 
 
 
+/* FAQ*/
+#content section.help #box {
+	display: block;
+	float: left;
+	position: relative;
+	width: 98%;
+	margin:1%;
+	height:150px;
+	background-color: white;
+	opacity: .9;
+	border-radius: .3em;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+#content section.help .blauw {
+		color:66cccc;
+		}
+#content section.help .grijs {
+	color:999999;
+}
+
+#content section.help #box h1{
+	
+	padding-top:10px;
+	padding-left:15px;
+}
+
+#content section.help #box p{
+	padding-top:30px;
+	padding-left:15px;
+}
+
+
+
+
+
+
+
 
 
 
