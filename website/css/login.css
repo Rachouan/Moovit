@@ -5,19 +5,97 @@
 @font-face {font-family: Bariol;
 	src: url(fonts/Bariol_Regular.otf);
 }
+
+input:focus{
+  outline: none;
+}
 body{
   font-family: Bariol;
+  background-color: #f5f6fa;
 }
 
 header{
 
   width: 100%;
   float: left;
+  margin-top: 40px;
   text-align: center;
+
+}
+header h1{
+
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: #3d4151;
+  margin-bottom: 20px;
+
+}
+header p{
+
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: #3d4151;
+
+}
+header h1 span{
+
+  font-weight: 300;
 
 }
 header img{
 
-  width: 100px;
+  width: 80px;
 
 }
+
+article{
+  width: 100%;
+  float: left;
+}
+article section.login{
+
+  margin: 50px auto;
+  width:350px;
+  padding: 20px;
+  background-color: #8bd5ca;
+  border-radius: .3em;
+
+}
+
+
+article section.login header {
+  width: 100%;
+  float: left;
+}
+article section.login h1{
+  margin-bottom: 40px;
+  color: white;
+  line-height: 30px;
+
+  font-weight: 500;
+
+}
+article section.login span{
+  font-weight: 300;
+}
+
+article section.login form ul li{
+  display: block;
+  width: 100%;
+}
+article section.login form ul li label{
+  width: 5%;
+  padding: 2.5%;
+  background-color: white;
+  border-radius: .3em 0 0 .3em;
+  border-right: 1px solid rgba(0,0,0,.1); 
+}
+article section.login form ul li input{
+  display: block;
+  width: 75%;
+  padding: 2.5%;
+  float: left;
+}
+
+
+
